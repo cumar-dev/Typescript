@@ -1,0 +1,14 @@
+"use strict";
+const userName = "john doe";
+console.log("Hello" + userName);
+let number1 = 10;
+let number2 = 20;
+console.log(number1 + number2);
+let myName = "cumar acbdi axmed";
+console.log("hello " + myName);
+myName = "show man";
+console.log(myName);
+let age = 20;
+console.log(age);
+let isStudent = true;
+console.log(isStudent);
