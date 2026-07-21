@@ -16,3 +16,23 @@ console.log(age);
 
 let isStudent: boolean = true;
 console.log(isStudent);
+
+// Array
+
+let users = ["Aamina", "canab", "iqro"];
+console.log(users); 
+
+users.push("maryan", "nafiso");
+
+console.log(users[0]);
+
+let numbers: Array<number> = [100, 200, 300, 400];
+console.log(numbers);
+
+// tuple
+
+
+let entry: [number, string] = [1, "omar"];
+console.log(entry);
+entry.push(2, "cadnaan");
+console.log(entry);
