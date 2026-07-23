@@ -77,3 +77,28 @@ const b1 = {
     role: "admin"
 };
 console.log(b1);
+//Generics
+function echo(data) {
+    return data;
+}
+const myname = echo("hello");
+console.log(myname.toUpperCase());
+const myAge = echo(20);
+console.log(myAge);
+function firstItem(items) {
+    return items[0];
+}
+const firstNum = firstItem([1, 22, 34, 67]);
+console.log(firstNum);
+const firstName = firstItem(["omar", "ali"]);
+console.log(firstName);
+const stringResponse = {
+    success: true,
+    data: "john doe"
+};
+console.log(stringResponse);
+const userResponse = {
+    success: false,
+    data: { id: 123, name: "omar" }
+};
+console.log(userResponse);
