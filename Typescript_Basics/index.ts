@@ -194,3 +194,29 @@ const userResponse: responseData<{id: number, name: String}> = {
 }
 
 console.log(userResponse);
+
+//enum and as
+
+type Role = "admin" | "user" | "guest"; 
+
+function setRole(role: Role) {
+  console.log(`current role is: ${role}`);
+}
+
+setRole("admin");
+
+enum Roles {
+  Admin = "admin",
+  User = "user",
+  Mentor = "mentor",
+  SuperAdmin = "superadmin"
+}
+
+function currentRoles(role: Roles) {
+ console.log(`set role is: ${role}`);
+}
+
+currentRoles(Roles.SuperAdmin);
+
+const btn = document.querySelector("button") as HTMLButtonElement;
+btn.disabled = true;

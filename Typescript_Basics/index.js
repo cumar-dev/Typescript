@@ -102,3 +102,18 @@ const userResponse = {
     data: { id: 123, name: "omar" }
 };
 console.log(userResponse);
+function setRole(role) {
+    console.log(`current role is: ${role}`);
+}
+setRole("admin");
+var Roles;
+(function (Roles) {
+    Roles["Admin"] = "admin";
+    Roles["User"] = "user";
+    Roles["Mentor"] = "mentor";
+    Roles["SuperAdmin"] = "superadmin";
+})(Roles || (Roles = {}));
+function currentRoles(role) {
+    console.log(`set role is: ${role}`);
+}
+currentRoles(Roles.SuperAdmin);
